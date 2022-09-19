@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css" />
+		<title>Portafolio 2022 | Bienvenido</title>
+	</head>
+	<body>
+		<header id="mainheader">
+			<nav id="navbar">
+				<div class="container">
+					<div class="logo"><img src="./images/logo3.png" alt="" /></div>
+					<ul class="nav">
+						<li><a href="#mainheader">Inicio</a></li>
+						<li><a href="#work">Servicios</a></li>
+						<li><a href="#about">Sobre mi</a></li>
+						<li><a href="#contact">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div id="showcase">
+				<div class="container">
+					<h1 class="display-1">
+						Desarrollo Web & Servicio Tecnico en Sistemas
+					</h1>
+					<a href="#work" class="btn btn-outline">Mis Servicios</a>
+				</div>
+			</div>
+		</header>
+
+		<section id="work">
+			<div class="container">
+				<h2>Mi trabajo y mis Servicios</h2>
+				<div class="work-row">
+					<div class="work-row-box">
+						<h4>Desarrollador Web</h4>
+						<p>
+							Si está buscando un desarrollador que se haga cargo de la investigación y el desarrollo de su sitio web, soy un profesional bien establecido para ayudarlo con esto. 
+						</p>
+						<a href="#" class="btn-link">Learn More</a>
+					</div>
+					<div class="work-row-box">
+						<h4>Tecnico de Sistemas</h4>
+						<p>
+							Si esta buscando un profesional en soporte de servicio tecnico, para computadoras, laptops, impresoras y configuracion de redes e internet soy el indicado. 
+						</p>
+						<a href="#" class="btn-link">Learn More</a>
+					</div>
+					<div class="work-row-box">
+						<h4>Soporte Informatico</h4>
+						<p>
+							Soporte y Mantenimiento de Computadoras se forma para poder instalar, poner en funcionamiento, operar, interconectar y dar mantenimiento a equipos de cómputo.
+						</p>
+						<a href="#" class="btn-link">Learn More</a>
+					</div>
+				</div>
+				
+				<div class="work-row">
+					<div class="work-row-box">
+						<h4>Desarrollador Web</h4>
+						<img src="./images/web.jpg" alt="" width="300" height="250">
+						<br>
+						<br>
+						<form action="index.html" method="get">
+							<fieldset>
+							<h3>Iniciar Sesion</h3>
+							 Nombre Usuario: <input type="text"  placeholder="Ingresar tu Nombre" maxlength="20" id="nombre" required> <br> 
+									   
+							 Correo: <input type="email" placeholder="Ingresa tu Correo" id="correo" required> <br> 
+										 
+							 <input type="submit" class="button" name="Enviar" onclick="hizoClick()" value="Enviar">
+								   
+						 <script>
+						 function hizoClick() {
+						   var nombre = document.getElementById("nombre").value;
+						   var correo = document.getElementById("correo").value;
+						   if (nombre == "" || correo == "") {
+							   alert("Atencion debes llenar los datos"); 
+						   } else {
+						   alert("Bievenido");
+						   }
+						 }
+						 </script>
+						 <br>
+
+						<a href="#" class="btn-link">Learn More</a>
+					</div>
+					<div class="work-row-box">
+						<h4>Tecnico de Sistemas</h4>
+				
+						<img src="./images/tecnico.jpg" alt="" width="300" height="250">
+						
+						<!--Convertir Boliviano a Dolar -->
+						<br>
+							<h3>Covertir de Boliviano a Dolar</h3>
+							<input id="txtBoliviano" type="text" placeholder="Bolivianos a convertir"> $ US
+							<p>
+								<input id="botoncito" type="button" value="Convertir">
+							</p>
+
+							<script>
+								var numeroDeBoli = document.getElementById("txtBoliviano");
+								var boton = document.getElementById("botoncito");
+								
+								function deBoliAdolar()
+								{
+
+									var boliviano= 0.14065; // 1 Boliviano equivale a 0.14065 dolares
+
+									resultado = boliviano * parseInt(numeroDeBoli.value);
+									alert(resultado + " dolares");
+								}
+
+								boton.addEventListener("click", deBoliAdolar);
+							</script>
+						<br>
+						<!--Convertir Boliviano a Dolar -->
+
+						<!--Convertir Dolar a Boliviano -->
+							<h3>Covertir de Dolar a Boliviano</h3>
+							<input id="txtDolares" type="text" placeholder="Dolares a convertir"> $ BO
+							<p>
+								<input id="botoncito2" type="button" value="Convertir">
+							</p>
+
+							<script>
+								var numeroDeDolares = document.getElementById("txtDolares");
+								var boton = document.getElementById("botoncito2");
+								
+								function deDolarABoli()
+								{
+
+									var dolar= 6.71045; // 1 Dolar equivale a 6,71045 Bolivianos
+
+									resultado = dolar * parseInt(numeroDeDolares.value);
+									alert(resultado + " Bolivianos");
+								}
+
+								boton.addEventListener("click", deDolarABoli);
+							</script>
+						<!--Convertir Dolar a Boliviano -->
+
+
+						<a href="#" class="btn-link">Learn More</a>
+					</div>
+					<div class="work-row-box">
+						<h4>Soporte Informatico</h4>
+						<img src="./images/soporte.jpg" alt="" width="300" height="250">
+						<br>
+						<a href="#" class="btn-link">Learn More</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="about">
+			<img src="./images/info.jpg" alt="" />
+			<div class="about-text">
+				<h2>
+					Sobre Mi:
+				</h2>
+				<p class="large">
+					<h2>Mi llamo <>
+						<br>
+					 Luis Gonzalo Garey Tito</h2>
+					<br>
+					Hola soy un profesional en el area de Sistemas Informaticos soy un entusiaste con años de experiencia en el
+					campo laboral, si necesitas servicios desarrollado web, servicio tecnico de sistemas, soporte informatico como analista de aplicaciones y guia.
+					Soy el profesional indicado para trabajar con usted no dude en ponerse en contacto conmigo para trabajar en projectos. 
+				</p>
+
+				<a href="#" class="btn btn-outline">Volver arriba</a>
+			</div>
+			<img src="./images/" class="about-slim" alt="" />
+		</section>
+
+		<hr />
+
+		<section id="contact">
+			<div class="container">
+				<div class="contact-info">
+					<p>
+						°  titoluis200@gmail.com 
+						<br />
+						°  +591 75927044
+						<br>
+						°  Cochabamba, Bolivia
+					</p>
+				</div>
+				<div class="contact-logo">
+					<img src="./images/logo3.png" alt="" />
+				</div>
+				<div class="contact-social">
+					<a href="https://github.com/Afthedark" target="_blank"><img src="./images/icon-github.png" alt="" /></a>
+					<br>
+					<a href="https://www.youtube.com/channel/UCDHo4LKlshQjmcMVZKB8Lcw" target="_blank"><img src="./images/icon-yt.png" alt="" /></a>
+					<br>
+					<a href="https://twitter.com/AFTHEDARK" target="_blank"><img src="./images/icon-twitter.png" alt="" /></a>
+					<br>
+					<a href="https://www.instagram.com/luis_gonzalo_tito/" target="_blank"><img src="./images/icon-ig.png" alt="" /></a>
+				</div>
+			</div>
+		</section>
+
+		<hr />
+
+		<footer id="mainfooter">
+			<h2>Gracias por tu visita :)</h2>
+		</footer>
+	</body>
+</html>
